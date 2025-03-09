@@ -66,6 +66,3 @@ This project is open-source and available under the [MIT License](LICENSE).
 ## 👨‍💻 Contributing
 Contributions are welcome! Feel free to open issues or submit pull requests.
 
-## 📞 Contact
-For any queries or suggestions, reach out at [your email] or connect on [LinkedIn/GitHub].
-
