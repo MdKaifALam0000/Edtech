@@ -52,8 +52,10 @@ Ensure you have the following installed:
    ```
    This will start both the frontend and backend servers.
 
-## 🎨 UI Preview
-(Include screenshots of your platform here)
+## 🎨 UI Preview!
+[Screenshot 2025-03-09 152547](https://github.com/user-attachments/assets/95f56f4e-0af6-4368-b298-fdc2bde1e015)
+
+
 
 ## 📌 Future Enhancements
 - Live video streaming for real-time classes
