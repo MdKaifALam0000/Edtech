@@ -1,31 +1,70 @@
-# React & Tailwind CSS Starter Pack
+# EdTech Platform
 
-This is a starter pack for creating React projects with Tailwind CSS configured. It uses React version **18.2** and Tailwind CSS version **3.2**.
+## 📌 Overview
+The **EdTech Platform** is a fully functional web application that enables instructors to create, manage, and sell courses while allowing students to browse, enroll, and track their learning progress. Built with modern web technologies, this platform provides a seamless and interactive learning experience for users.
 
-## Usage
+## 🚀 Features
+### For Instructors:
+- **Course Management**: Create, update, and delete courses with descriptions, videos, and pricing.
+- **Dashboard**: View enrolled students, track course progress, and manage earnings.
+- **Secure Authentication**: Role-based access control ensuring only authorized users can manage courses.
 
-This starter pack includes a basic setup for using **Tailwind CSS with React**. To start building your own components and styles, follow these steps:
+### For Students:
+- **Course Discovery**: Browse and search for courses by category, instructor, or keyword.
+- **Enrollment System**: Enroll in courses, track progress, and access course materials.
+- **Interactive Learning**: Watch videos, complete assignments, and take quizzes.
 
-1. Clone the repository to your local machine.
-    ```sh
-    git clone https://github.com/thepranaygupta/react-tailwind-css-starter-pack.git
-    ```
+## 🛠️ Tech Stack
+- **Frontend:** React.js, Tailwind CSS
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **Authentication:** JWT (JSON Web Tokens)
+- **API Integration:** RESTful API
 
-1. Install the required packages.
-    ```sh
-    cd react-tailwind-css-starter-pack
-    npm install
-    ```
+## 🔧 Installation & Setup
+### Prerequisites
+Ensure you have the following installed:
+- Node.js (latest version)
+- MongoDB (local or cloud instance)
+- Git
 
-1. Start the development server.
-    ```sh
-    npm start
-    ```
-1. Open the project in your browser at [`http://localhost:3000`](http://localhost:3000) to view your project.
-1. Create your React components and add your styles using Tailwind classes. You can also create new CSS files and import them into your components.
+### Steps to Run Locally
+1. **Clone the Repository:**
+   ```sh
+   git clone https://github.com/your-username/edtech-platform.git
+   cd edtech-platform
+   ```
+2. **Install Dependencies:**
+   ```sh
+   npm install
+   cd client && npm install
+   ```
+3. **Set Up Environment Variables:**
+   - Create a `.env` file in the root directory
+   - Add the following variables:
+     ```env
+     MONGO_URI=your_mongodb_connection_string
+     JWT_SECRET=your_secret_key
+     ```
+4. **Run the Application:**
+   ```sh
+   npm run dev
+   ```
+   This will start both the frontend and backend servers.
 
-The project is set up to use `postcss-cli` to process your CSS files. You can add your own `tailwind.config.js` file to customize your Tailwind setup.
+## 🎨 UI Preview!
+[Screenshot 2025-03-09 152547](https://github.com/user-attachments/assets/95f56f4e-0af6-4368-b298-fdc2bde1e015)
 
-## Contributing
 
-Contributions are welcome! If you have any suggestions or find any issues, please feel free to open an issue or a pull request.
+
+## 📌 Future Enhancements
+- Live video streaming for real-time classes
+- AI-based course recommendations
+- Mobile app integration
+
+## 📝 License
+This project is open-source and available under the [MIT License](LICENSE).
+
+## 👨‍💻 Contributing
+Contributions are welcome! Feel free to open issues or submit pull requests.
+
