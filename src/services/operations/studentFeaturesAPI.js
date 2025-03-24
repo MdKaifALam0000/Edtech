@@ -53,7 +53,8 @@ export async function buyCourse(token, courses, userDetails, navigate, dispatch)
             currency: orderResponse.data.data.currency,
             amount: `${orderResponse.data.data.amount}`,
             order_id: orderResponse.data.data.id,
-            name: "StudyNotion",
+
+            
             description: "Thank You for Purchasing the Course",
             image: rzpLogo,
             prefill: {
@@ -62,7 +63,7 @@ export async function buyCourse(token, courses, userDetails, navigate, dispatch)
             },
             handler: function (response) {
                 //send successful wala mail
-                sendPaymentSuccessEmail(response, orderResponse.data.message.amount, token);
+                sendPaymentSuccessEmail(response, orderResponse.data.data.amount, token);
                 //verifyPayment
                 verifyPayment({ ...response, courses }, token, navigate, dispatch);
             }
@@ -83,7 +84,9 @@ export async function buyCourse(token, courses, userDetails, navigate, dispatch)
     toast.dismiss(toastId);
 }
 
+
 async function sendPaymentSuccessEmail(response, amount, token) {
+    console.log(amount);
     try {
         await apiConnector("POST", SEND_PAYMENT_SUCCESS_EMAIL_API, {
             orderId: response.razorpay_order_id,

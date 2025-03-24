@@ -52,7 +52,7 @@ function ReviewSlider() {
                         disableOnInteraction: false,
                     }}
                     modules={[FreeMode, Pagination, Autoplay]}
-                    className="w-full"
+                    className="w-[1080px]"
                 >
                     {reviews.map((review, i) => (
                         <SwiperSlide key={i}>
