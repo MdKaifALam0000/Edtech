@@ -43,8 +43,23 @@ Ensure you have the following installed:
    - Create a `.env` file in the root directory
    - Add the following variables:
      ```env
-     MONGO_URI=your_mongodb_connection_string
-     JWT_SECRET=your_secret_key
+     MONGODB_URL = "your_MongoDb_Url"
+     PORT = Port_Number
+
+CLOUD_NAME = your cloudinary CloudName
+API_KEY = cloudinary API key
+API_SECRET = cloudinary API secret key
+
+MAIL_HOST = smtp.gmail.com
+MAIL_USER = your_email
+MAIL_PASS = your Mail Pass
+
+
+JWT_SECRET = "your JWT secret"
+FOLDER_NAME = "Your_Folder_Name"
+
+RAZORPAY_SECRET = razorPay secret key
+RAZORPAY_KEY = razorPay key
      ```
 4. **Run the Application:**
    ```sh
