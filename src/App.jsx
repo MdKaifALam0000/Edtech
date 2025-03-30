@@ -3,7 +3,9 @@ import { Route, Routes, useNavigate } from "react-router-dom";
 import Home from "./pages/Home"
 import Navbar from "./components/common/Navbar"
 import OpenRoute from "./components/core/Auth/OpenRoute"
-
+import { useEffect } from "react";
+import axios from "axios";
+import { useDispatch, useSelector } from "react-redux";
 
 import Login from "./pages/Login"
 import Signup from "./pages/Signup"
@@ -17,7 +19,6 @@ import Dashboard from "./pages/Dashboard";
 import PrivateRoute from "./components/core/Auth/PrivateRoute";
 import Error from "./pages/Error"
 import Settings from "./components/core/Dashboard/Settings";
-import { useDispatch, useSelector } from "react-redux";
 import EnrolledCourses from "./components/core/Dashboard/EnrolledCourses";
 import Cart from "./components/core/Dashboard/Cart";
 import { ACCOUNT_TYPE } from "./utils/constants";
@@ -34,9 +35,21 @@ function App() {
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
-
   const { user } = useSelector((state) => state.profile)
-
+  
+  // Test backend connection
+  useEffect(() => {
+    const testBackendConnection = async () => {
+      try {
+        const response = await axios.get("https://edtech-w5tk.onrender.com/api/v1");
+        console.log("Backend connection successful:", response.data);
+      } catch (error) {
+        console.error("Backend connection failed:", error);
+      }
+    };
+    
+    testBackendConnection();
+  }, []);
 
   return (
     <div className="w-screen min-h-screen bg-richblack-900 flex flex-col font-inter">
