@@ -25,7 +25,7 @@ app.use(cookieParser());
 
 app.use(
     cors({
-        origin: process.env.NODE_ENV === "production" ? "*" : "http://localhost:3000",
+        origin: "*",
         credentials: true,
     })
 )
