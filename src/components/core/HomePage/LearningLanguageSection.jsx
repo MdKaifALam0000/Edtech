@@ -4,6 +4,7 @@ import knowYourProgress from '../../../assets/Images/Know_your_progress.svg'
 import compareWithOthers from '../../../assets/Images/Compare_with_others.svg'
 import planYourLesson from '../../../assets/Images/Plan_your_lessons.svg'
 import CTAButton from '../HomePage/Button'
+
 const LearningLanguageSection = () => {
     return (
         <div className='mt-[130px]'>

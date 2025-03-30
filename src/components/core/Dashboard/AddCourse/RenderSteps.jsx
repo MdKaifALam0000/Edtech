@@ -6,6 +6,7 @@ import CourseInformationForm from "./CourseInformation/CourseInformationForm"
 import PublishCourse from "./PublishCourse"
 
 
+
 export default function RenderSteps() {
   const { step } = useSelector((state) => state.course)
 

@@ -47,6 +47,7 @@ exports.updateCourseProgress = async (req, res) => {
   }
 }
 
+
 // exports.getProgressPercentage = async (req, res) => {
 //   const { courseId } = req.body
 //   const userId = req.user.id

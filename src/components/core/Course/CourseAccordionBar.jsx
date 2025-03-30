@@ -7,6 +7,7 @@ export default function CourseAccordionBar({ course, isActive, handleActive }) {
   const contentEl = useRef(null)
 
   // Accordian state
+  
   const [active, setActive] = useState(false)
   useEffect(() => {
     setActive(isActive?.includes(course._id))

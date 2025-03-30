@@ -5,6 +5,7 @@ import { getInstructorData } from '../../../../services/operations/profileAPI';
 import InstructorChart from './InstructorChart';
 import { Link } from 'react-router-dom';
 
+
 export default function Instructor() {
     const { token } = useSelector((state) => state.auth)
     const { user } = useSelector((state) => state.profile)

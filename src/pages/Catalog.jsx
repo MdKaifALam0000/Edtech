@@ -9,6 +9,7 @@ import CourseSlider from '../components/core/Catalog/CourseSlider';
 import { useSelector } from "react-redux"
 import Error from "./Error"
 
+
 const Catalog = () => {
 
     const { loading } = useSelector((state) => state.profile)

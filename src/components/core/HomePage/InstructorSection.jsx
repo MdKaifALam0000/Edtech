@@ -2,6 +2,7 @@ import React from 'react';
 import Instructor from '../../../assets/Images/Instructor.png'
 import HighlightText from './HighlightText';
 import { FaArrowAltCircleRight } from 'react-icons/fa';
+
 import CTAButton from '../HomePage/Button'
 const InstructorSection = () => {
     return (

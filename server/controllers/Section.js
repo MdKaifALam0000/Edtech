@@ -18,6 +18,7 @@ exports.createSection = async (req, res) => {
 		// Create a new section with the given name
 		const newSection = await Section.create({ sectionName });
 
+		
 		// Add the new section to the course's content array
 		const updatedCourse = await Course.findByIdAndUpdate(
 			courseId,

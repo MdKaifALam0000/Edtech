@@ -196,7 +196,6 @@ exports.sendotp = async (req, res) => {
         message: `User is Already Registered`,
       })
     }
-
     var otp = otpGenerator.generate(6, {
       upperCaseAlphabets: false,
       lowerCaseAlphabets: false,

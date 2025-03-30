@@ -41,3 +41,4 @@ const CourseSlider = ({ Courses }) => {
 };
 
 export default CourseSlider;
+

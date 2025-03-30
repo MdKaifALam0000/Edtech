@@ -8,6 +8,7 @@ exports.createSubSection = async (req, res) => {
   try {
     // Extract necessary information from the request body
 
+    
     const { sectionId, title, description } = req.body
     const video = req.files.video
 
