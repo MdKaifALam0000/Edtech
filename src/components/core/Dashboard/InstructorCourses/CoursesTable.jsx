@@ -110,8 +110,8 @@ export default function CoursesTable({ courses, setCourses }) {
                     )}
                   </div>
                 </Td>
-                <Td className="text-sm font-medium text-richblack-100">
-                  2hr 30min
+                <Td className="text-sm font-medium text-richblack-100 min-w-[100px] text-center">
+                  {course.totalDuration || "0hr 0min"}
                 </Td>
                 <Td className="text-sm font-medium text-richblack-100">
                   ₹{course.price}
